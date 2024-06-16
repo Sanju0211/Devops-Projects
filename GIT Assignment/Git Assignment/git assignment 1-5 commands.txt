@@ -1,0 +1,149 @@
+git assignment session commands:
+
+Assignment number 1:
+-------------------------------------------
+ 1  sudo apt-get update
+    2  clear
+    3  mkdir assign1
+    4  cd assign1
+    5  git init
+    6  clear
+    7  nano code.txt
+    8  nano log.txt
+    9  nano output.txt
+   10  git add code.txt
+   11  git add output.txt
+   12  git status
+   13  git commit -m "this is my first commit"
+   14  git status
+   15  clear
+   16  ls
+   17  git remote add origin https://github.com/am29work/mygitassign1.git
+   18  git push origin master
+   19  history
+-------------------------------------------
+
+Assignment number 2:
+
+-------------------------------------------
+
+   21  mkdir assign2
+   22  cd assign2
+   23  git init
+   24  touch master.txt feature1.txt feature2.txt
+   25  git branch
+   26  git add .
+   27  git branch
+   28  git commit -m "new assignmet commit"
+   29  git branch
+   30  git branch develop
+   31  git branch feature1
+   32  git branch feature2
+   33  git branch
+   34  git checkout develop
+   35  ls
+   36  touch develop.txt
+   37  ls
+   38  git status
+   39  git stash -u 
+   40  ls
+   41  git checkout feature1
+   42  touch new.txt
+   43  git add .
+   44  git commit -m "feature1 commit"
+   45  ls
+   46  git branch
+   47  git checkout develop
+   48  ls
+   49  git stash pop
+   50  ls
+   51  git add . && git commit -m "finalised changes"
+   52  history
+
+--------------------------------------------------------------
+
+
+to push all branches except for a specific branch ->
+
+git push --all : (branch name you want to exclude)
+
+
+Assignment 3:
+------------------------------------------------------------------------------------------------
+
+   54  mkdir assign3
+   55  cd assign3
+   56  git init
+   57  touch main.txt
+   58  git add . && git commit -m "new assignment 3"
+   59  ls
+   60  git branch
+   61  git branch develop
+   62  git branch f1
+   63  git branch f2
+   64  git checkout develop
+   65  touch develop.txt
+   66  git add . && git commit -m "develop"
+   67  git checkout f1
+   68  touch f1.txt
+   69  git add . && git commit -m "f1 branch commit"
+   70  git checkout f2
+   71  ls
+   72  touch f2.txt
+   73  git add . && git commit -m "feature 2 branch commit"
+   74  git remote add origin https://github.com/am29work/assign3git.git
+   75  git push --all
+   76  git checkout master
+   77  git branch
+   78  git branch -D f2
+   79  git branch
+   80  git push origin -D f2
+   81  git push origin --delete f2
+   82  history
+
+----------------------------------------------------------------------------------------------------
+
+merge conflict:
+
+----------------------------------------------------------------
+
+    1  history
+    2  mkdir mgc
+    3  cd mgc
+    4  git init
+    5  touch master.txt
+    6  git add . && git commit -m "first commit"
+    7  ls
+    8  git branch
+    9  nano master.txt
+   10  git add . && git commit -m "first commit 1"
+   11  ls
+   12  git branch
+   13  cat master.txt 
+   14  git branch f1
+   15  git checkout f1
+   16  ls
+   17  nano master.txt 
+   18  git add . && git commit -m "f1 branch edited master file"
+   19  ls
+   20  git checkout maste
+   21  git checkout master
+   22  ls
+   23  nano master.txt 
+   24  git add . && git commit -m "master branch again edited master file"
+   25  git branch
+   26  git mergre f1
+   27  git branch
+   28  git merge f1
+   29  nano master.txt
+   30  git add . && git commit -m "resolved conflit"
+   31  history
+
+---------------------------------------------------------------
+
+
+
+
+
+
+

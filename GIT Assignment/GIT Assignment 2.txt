@@ -1,0 +1,24 @@
+touch feature1.txt
+touch feature2.txt
+git branch develop
+git branch feature1
+git branch feature2
+
+git checkout develop
+touch develop.txt
+git stash
+
+git checkout feature1
+touch new.txt
+git add new.txt
+git commit -m "adding new file new.txt"
+git status
+
+git checkout develop
+git stash pop
+ls
+git status
+git add develop.txt
+git commit -m "adding stashed file develop.txt"
+git status
+

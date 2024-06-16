@@ -1,0 +1,50 @@
+1  pwd
+    2  ls
+    3  cd c/users/admin
+    4  cd ..
+    5  cd ..
+    6  cd ..
+    7  git config --global user.name "Sanjeev"
+    8  git config --global user.email "sansanjeev@gmail.com"
+    9  git config --global core.editor "Vi"
+   10  mkdir ProjectA
+   11  cd ..
+   12  cd ..
+   13  ls
+   14  mkdir AssignmentA
+   15  mkdir New
+   16  pwd
+   17  mkdir AssignmentA
+   18  pwd
+   19  mkdir ProjectA
+   20  pwd
+   21  git config --global user.name "Sanjeev"
+   22  git config --global user.email "sansanjeev501@gmail.com"
+   23  git config --list
+   24  mkdir Project1
+   25  cd Project1
+   26  pwd
+   27  pwd
+   28  git int
+   29  ls -la
+   30  git init
+   31  ls -la
+   32  touch Code.txt
+   33  git status
+   34  touch Output.txt
+   35  touch Log.txt
+   36  ls
+   37  git status
+   38  git add Code.txt Output.txt
+   39  git status
+   40  git commit -m "Adding new file"
+   41  git status
+   42  git branch
+   43  ls -la
+   44  git remote add project https://github.com/Sanju0211/Sanju0211.git
+   45  git remote -v
+   46  git push project master
+   47  git log
+   48  git log a
+   49  git log master
+   50  history
